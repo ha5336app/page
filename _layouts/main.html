@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+      }
+
+      header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        margin-bottom: 32px;
+        text-align: left;
+        background: #000;
+        color: #ffffff;
+        font-size: 32px;
+      }
+
+      .name {
+        max-width: 670px;
+        margin: auto;
+        color: #000;
+      }
+
+      .content {
+        max-width: 670px;
+        margin: auto;
+        color: #000;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      }
+
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 14px;
+        background-color: red;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="name"><a href="/draft-page">Page</a></div>
+    </header>
+    <div class="content">{{ content }}</div>
+    <footer><a href="/draft-page">Page</a></footer>
+  </body>
+</html>
